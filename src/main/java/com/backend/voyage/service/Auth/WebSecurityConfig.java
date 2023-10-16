@@ -21,7 +21,7 @@ public class WebSecurityConfig {
 
             try {
 
-                auto.requestMatchers("/*/*", "/*/*/*")
+                auto.requestMatchers("/*/*", "/*/*/*", "/*/*/*/*")
                         .permitAll()
                         .anyRequest().authenticated()
                         .and().csrf().disable()

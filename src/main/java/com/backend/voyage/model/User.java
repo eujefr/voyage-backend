@@ -2,7 +2,6 @@ package com.backend.voyage.model;
 
 import static java.util.Objects.nonNull;
 
-import org.springframework.boot.configurationprocessor.json.JSONArray;
 import org.springframework.boot.configurationprocessor.json.JSONObject;
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken.Payload;
@@ -12,14 +11,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
 
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
 public class User {
 
     @Id

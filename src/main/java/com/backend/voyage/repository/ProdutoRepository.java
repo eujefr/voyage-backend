@@ -8,4 +8,5 @@ import java.util.List;
 public interface ProdutoRepository extends JpaRepository<Produto, Integer> {
 
     List<Produto> findByIdPostIn(Iterable<Integer> ids);
+    List<Produto> findByIdProdutoIn(Iterable<Integer> idProduto);
 }

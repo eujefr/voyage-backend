@@ -19,19 +19,19 @@ public class PostDTO {
     private Integer idPost;
     private String dsPost;
     private String dsImgPost;
-    private UserDTO userDTO;
+    private User user;
     private boolean containsProduto;
 
-    public PostDTO(Post posts, User users, boolean containsProduto) {
+    public PostDTO(Post posts, User user, boolean containsProduto) {
 
         this.idPost = posts.getIdPost();
-        this.userDTO = new UserDTO(users);
+        this.user = user;
         this.dsPost = posts.getDsPost();
         this.dsImgPost = posts.getDsImgPost();
         this.containsProduto = containsProduto;
     }
 
-    public static List<PostDTO> postDto(List<Post> post, List<User> users, List<Produto> produtos ) {
+    public static List<PostDTO> postDto(List<Post> post, List<User> users, List<Produto> produtos) {
 
         return post.stream().map(post1 -> {
 

@@ -29,7 +29,7 @@ public class Produto {
     private String dsProduto;
 
     @Column(name = "vl_produto")
-    private BigDecimal vlProduto;
+    private String vlProduto;
 
     public Produto() {
     }
@@ -52,7 +52,7 @@ public class Produto {
 
                     Produto produto = new Produto();
                     produto.setDsProduto(jsonArray.getJSONObject(i).get("dsProduto").toString());
-                    produto.setVlProduto(new BigDecimal(jsonArray.getJSONObject(i).get("vlProduto").toString()));
+                    produto.setVlProduto(jsonArray.getJSONObject(i).get("vlProduto").toString());
 
                     list.add(produto);
                 }

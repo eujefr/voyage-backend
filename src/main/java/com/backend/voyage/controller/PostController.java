@@ -31,7 +31,7 @@ public class PostController {
     private final ProdutoService produtoService;
 
     @GetMapping("/posts")
-    public List<PostDTO> findAll(@PageableDefault(size = 5) Pageable pageable) {
+    public List<PostDTO> findAll(@PageableDefault(size = 8) Pageable pageable) {
 
         return postService.findAll(pageable);
     }
