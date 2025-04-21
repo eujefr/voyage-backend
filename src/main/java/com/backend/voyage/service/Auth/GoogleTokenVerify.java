@@ -15,9 +15,9 @@ import com.google.api.client.json.gson.GsonFactory;
 public class GoogleTokenVerify {
 
     private static final String CLIENT_ID_ANDROID
-            = "682939364945-k52rvbqd3jtv9u8p2be4uskeire73kag.apps.googleusercontent.com";
+            = "asdjasklsadjlakd";
     private static final String CLIENT_ID_WEB
-            = "682939364945-djr29pt64enh9mstg49nmm3oj2j7q1lo.apps.googleusercontent.com";
+            = "adasdasdasdsad";
 
     private static Payload payload;
 
